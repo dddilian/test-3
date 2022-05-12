@@ -1,0 +1,39 @@
+<header>
+
+    <nav class="navbar navbar-dark">
+
+        <div class="container-fluid">
+
+            <div>
+                
+                <img src="./assets/images/logo.png" alt="">
+
+                {{#if isLogged}}
+                <a href="#home" id="homeBtn" class="navbar-brand">Home</a>
+                <a href="#favoriteLocations" id="favoriteLocationsBtn" class="navbar-brand">Favorite locations</a>
+                {{/if}}
+
+            </div>
+
+            <div>
+                {{#if isLogged}}
+                <h1 class="h1" id="siteName"> {{username}}, Piche li?</h1>
+                {{else}}
+                <h1 class="h1" id="siteName"> Guest, Piche li?</h1>
+                {{/if}}
+            </div>
+
+            <div class="d-flex">
+                {{#if isLogged}}
+                <a href="#logout" id="logoutBtn" class="navbar-brand">Logout</a>
+                {{else}}
+                <a href="#login" id="loginBtn" class="navbar-brand">Login</a>
+                <a href="#register" id="registerBtn" class="navbar-brand">Register</a>
+                {{/if}}
+            </div>
+
+        </div>
+
+    </nav>
+
+</header>

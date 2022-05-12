@@ -1,0 +1,21 @@
+{{>header}}
+
+
+<main class="d-flex justify-content-center align-items-center flex-column">
+
+    <div>
+        <h1>{{countryName}}</h1>
+    </div>
+
+    <div>
+        <img src="{{countryFlagSrc}}" alt="">
+    </div>
+
+    <div id="sixDaysDiv">
+        {{#each hours}}
+        {{>hour}}
+        {{/each}}
+    </div>
+
+
+</main>

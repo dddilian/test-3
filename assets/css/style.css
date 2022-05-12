@@ -1,0 +1,13 @@
+.navbar {
+    background-color: #0c251c;
+    border-radius: 5px;
+}
+
+#siteName {
+    color: beige;
+}
+
+.card-title,
+.card-text {
+    text-align: center;
+}

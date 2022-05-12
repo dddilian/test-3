@@ -1,0 +1,15 @@
+{{>header}}
+
+<main class="d-flex justify-content-center flex-column">
+
+    <input type="search" id="searchEl" class="w-25 mx-auto mt-2">
+
+    <div class="w-100 mt-2 mx-auto d-flex justify-content-center flex-wrap" id="cardsEl">
+
+        {{#each countries}}
+        {{>country}}
+        {{/each}}
+
+    </div>
+
+</main>

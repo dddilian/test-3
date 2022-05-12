@@ -1,0 +1,29 @@
+<div class="card" style="width: 20rem;">
+
+    <img src="{{flags.png}}" class="card-img-top" alt="..." width="318px" height="211px">
+
+    <div class="card-body">
+
+        <h5 class="card-title">{{name.common}}</h5>
+
+        <p class="card-text">{{capital}}</p>
+
+        <div class="mx-auto d-flex justify-content-between flex-wrap">
+
+            {{!-- <button data-name={{name.common}} class="btn btn-primary forecast">Check forecast</button> --}}
+
+            <a href="#forecast/{{name.common}}" class="btn btn-primary forecast">Check forecast</a>
+
+            <button id="addToFav-{{name.common}}" data-name={{name.common}} class="btn btn-primary fav">
+                {{#if isLiked}}
+                Remove from favorites
+                {{else}}
+                Add to favorites
+                {{/if}}
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
